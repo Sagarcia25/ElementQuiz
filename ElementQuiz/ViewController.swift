@@ -20,6 +20,15 @@ class ViewController: UIViewController {
         updateElement()
     }
 
+    @IBAction func showAnswer(_ sender: UIButton) {
+        answerLabel.text = elementList[currentElementIndex]
+    }
+    
+    @IBAction func nextElement(_ sender: UIButton) {
+        currentElementIndex += 1
+        updateElement()
+    }
+    
     func updateElement(){
         let elementName = elementList[currentElementIndex]
         let image = UIImage(named: elementName)
