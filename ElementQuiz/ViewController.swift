@@ -26,6 +26,9 @@ class ViewController: UIViewController {
     
     @IBAction func nextElement(_ sender: UIButton) {
         currentElementIndex += 1
+        if currentElementIndex >= elementList.count{
+            currentElementIndex = 0
+        }
         updateElement()
     }
     
