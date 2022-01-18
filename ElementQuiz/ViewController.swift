@@ -17,8 +17,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateElement()
     }
 
+    func updateElement(){
+        let elementName = elementList[currentElementIndex]
+        let image = UIImage(named: elementName)
+        imageView.image = image
+        answerLabel.text = "?"
+    }
 
 }
 
