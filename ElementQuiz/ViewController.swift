@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var answerLabel: UILabel!
     
+    var mode: Mode = .flashCard
+    
     let elementList = ["Carbon","Gold","Chlorine","Sodium"]
     var currentElementIndex = 0
     

@@ -13,6 +13,7 @@
 		7AF7B60B27975BA60082044A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF7B60927975BA60082044A /* Main.storyboard */; };
 		7AF7B60D27975BA70082044A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF7B60C27975BA70082044A /* Assets.xcassets */; };
 		7AF7B61027975BA70082044A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF7B60E27975BA70082044A /* LaunchScreen.storyboard */; };
+		7AF7B618279767EB0082044A /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7B617279767EB0082044A /* Mode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7AF7B60C27975BA70082044A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AF7B60F27975BA70082044A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AF7B61127975BA70082044A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AF7B617279767EB0082044A /* Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				7AF7B60327975BA60082044A /* AppDelegate.swift */,
 				7AF7B60527975BA60082044A /* SceneDelegate.swift */,
 				7AF7B60727975BA60082044A /* ViewController.swift */,
+				7AF7B617279767EB0082044A /* Mode.swift */,
 				7AF7B60927975BA60082044A /* Main.storyboard */,
 				7AF7B60C27975BA70082044A /* Assets.xcassets */,
 				7AF7B60E27975BA70082044A /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				7AF7B60827975BA60082044A /* ViewController.swift in Sources */,
 				7AF7B60427975BA60082044A /* AppDelegate.swift in Sources */,
+				7AF7B618279767EB0082044A /* Mode.swift in Sources */,
 				7AF7B60627975BA60082044A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
