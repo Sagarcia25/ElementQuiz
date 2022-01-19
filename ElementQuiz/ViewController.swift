@@ -12,6 +12,10 @@ class ViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var answerLabel: UILabel!
     
+    @IBOutlet var modeSelector: UISegmentedControl!
+    @IBOutlet var textField: UITextField!
+    
+    
     var mode: Mode = .flashCard
     
     let elementList = ["Carbon","Gold","Chlorine","Sodium"]
