@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateElement()
+        updateFlashCardUI()
     }
 
     @IBAction func showAnswer(_ sender: UIButton) {
@@ -35,10 +35,10 @@ class ViewController: UIViewController {
         if currentElementIndex >= elementList.count{
             currentElementIndex = 0
         }
-        updateElement()
+        updateFlashCardUI()
     }
     
-    func updateElement(){
+    func updateFlashCardUI(){
         let elementName = elementList[currentElementIndex]
         let image = UIImage(named: elementName)
         imageView.image = image
