@@ -23,12 +23,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateFlashCardUI()
+        updateUI()
     }
 
     @IBAction func showAnswer(_ sender: UIButton) {
         state = .answer
-        updateFlashCardUI()
+        updateUI()
     }
     
     @IBAction func nextElement(_ sender: UIButton) {
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             currentElementIndex = 0
         }
         state = .question
-        updateFlashCardUI()
+        updateUI()
     }
     
     //updates the UI in flashCard mode
@@ -52,6 +52,20 @@ class ViewController: UIViewController {
             answerLabel.text = "?"
         }
     }
+    
+    //updates the UI in quiz mode
+    func updateQuizUI(){
+        
+    }
 
+    //updates the app's UI based on its mode and state
+    func updateUI(){
+        switch mode{
+        case .flashCard:
+            updateFlashCardUI()
+        case .quiz:
+            updateQuizUI()
+        }
+    }
 }
 
