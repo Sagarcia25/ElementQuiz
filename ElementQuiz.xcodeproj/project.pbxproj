@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A51889E279A014A009A83E2 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A51889D279A014A009A83E2 /* State.swift */; };
 		7AF7B60427975BA60082044A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7B60327975BA60082044A /* AppDelegate.swift */; };
 		7AF7B60627975BA60082044A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7B60527975BA60082044A /* SceneDelegate.swift */; };
 		7AF7B60827975BA60082044A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF7B60727975BA60082044A /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A51889D279A014A009A83E2 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		7AF7B60027975BA60082044A /* ElementQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElementQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF7B60327975BA60082044A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AF7B60527975BA60082044A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				7AF7B60527975BA60082044A /* SceneDelegate.swift */,
 				7AF7B60727975BA60082044A /* ViewController.swift */,
 				7AF7B617279767EB0082044A /* Mode.swift */,
+				7A51889D279A014A009A83E2 /* State.swift */,
 				7AF7B60927975BA60082044A /* Main.storyboard */,
 				7AF7B60C27975BA70082044A /* Assets.xcassets */,
 				7AF7B60E27975BA70082044A /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				7AF7B60827975BA60082044A /* ViewController.swift in Sources */,
 				7AF7B60427975BA60082044A /* AppDelegate.swift in Sources */,
 				7AF7B618279767EB0082044A /* Mode.swift in Sources */,
+				7A51889E279A014A009A83E2 /* State.swift in Sources */,
 				7AF7B60627975BA60082044A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

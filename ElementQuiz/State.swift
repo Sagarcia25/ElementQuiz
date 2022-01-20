@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum State{
+    case question
+    case answer
+}

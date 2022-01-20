@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet var modeSelector: UISegmentedControl!
     @IBOutlet var textField: UITextField!
     
-    
     var mode: Mode = .flashCard
+    var state: State = .question
     
     let elementList = ["Carbon","Gold","Chlorine","Sodium"]
     var currentElementIndex = 0
@@ -27,7 +27,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showAnswer(_ sender: UIButton) {
-        answerLabel.text = elementList[currentElementIndex]
+        state = .answer
+        updateFlashCardUI()
     }
     
     @IBAction func nextElement(_ sender: UIButton) {
@@ -35,14 +36,21 @@ class ViewController: UIViewController {
         if currentElementIndex >= elementList.count{
             currentElementIndex = 0
         }
+        state = .question
         updateFlashCardUI()
     }
     
+    //updates the UI in flashCard mode
     func updateFlashCardUI(){
         let elementName = elementList[currentElementIndex]
         let image = UIImage(named: elementName)
         imageView.image = image
-        answerLabel.text = "?"
+        
+        if state == .answer{
+            answerLabel.text = elementName
+        } else {
+            answerLabel.text = "?"
+        }
     }
 
 }
